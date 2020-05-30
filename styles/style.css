@@ -1,0 +1,96 @@
+:root {
+    --background-col: blue
+}
+
+body{
+    /* border: 3px solid rgb(91, 3, 126); */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: blanchedalmond;
+    height: 7vh; /* When this gets changed, the other vh 
+                heights need to be changed aswell */
+}
+h1{
+    margin: 10px;
+}
+p{
+    margin: 10px;
+    font-size: 15px;
+    padding: 0px 15px;
+}
+.axis{
+    justify-content: right;
+}
+.centerpiece{
+    flex-basis: 400px;
+}
+section{
+    /* border: 3px solid rgb(211, 4, 4); */
+    height: 93vh;   /* This needs to be changed with the above */
+    display: flex;
+    margin: 0;
+}
+
+.parent-line{ 
+    width: 100%; 
+    height: 93vh;  /* As does this need to be changed */
+    display: flex;
+    flex-direction: column;
+    /* max-width: 100vw; */
+    /* max-height: 100%; */
+    /* border: 5px solid yellow; */
+    /* flex: 1; */
+}
+
+.div-border {
+    /* height: 50px; */
+    /* height: 1rem; */
+    flex: 1;
+    /* border: 0.5px solid rgb(215, 214, 216); */
+}
+
+.div-background{
+    background-color: var(--background-col);
+}
+button{
+    margin: 3px 3px 3px 3px;
+    width: 100px;
+    opacity: 0.85;
+    border-radius: 10px;
+}
+
+button.red-button{
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+button.blue-button{
+    background-color: blue;
+    border-color: blue;
+    color: white
+}
+
+button.green-button{
+    background-color: green;
+    border-color: green;
+    color: white
+}
+
+button.yellow-button{
+    background-color: yellow;
+    border-color: yellow;
+    color: black
+}
+
+header div{
+    flex-basis: 15vw;
+}
